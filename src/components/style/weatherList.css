@@ -1,0 +1,28 @@
+.weather-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assest/listBg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 0;
+    background-size: cover;
+}
+
+.weather-list-container .weather-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem;
+}
+
+.weather-list-container .weather-section ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+
+
+}

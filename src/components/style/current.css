@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cur-container {
+    background: url('../../assest/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    padding: 20px 70px;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.current-info {
+
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+    flex-wrap: wrap;
+    background: rgba(245, 237, 237, 0.4);
+    padding: 30px;
+    border-radius: 1rem;
+}
+
+.current-date-contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.time {
+    font-size: 70px;
+    font-weight: 100;
+    color: #3e3636;
+    font-weight: bold;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location {
+    font-size: 30px;
+    color: #3e3636;
+    font-weight: bold;
+
+}
+
+.date {
+    font-size: 30px;
+    color: #6e3b3b;
+    font-weight: 600;
+
+}
+
+.place-contianer {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.place-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time-zone {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+    color: #6e3b3b;
+}
+
+.country {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: end;
+    color: #6e3b3b;
+
+}
+
+.current-info .others {
+    display: flex;
+    flex-direction: column;
+    background: rgba(24, 24, 27, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+
+    font-weight: 600;
+}
+
+.current-info .others .weather-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80%;
+}
+
+@media only screen and (max-width:730px) {
+    .cur-container {
+        padding: 20px;
+    }
+
+    .time {
+        font-size: 50px;
+    }
+
+    #am-pm {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .place-contianer {
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .time-zone {
+        font-size: 20px;
+    }
+
+    .img-container {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width:1080px) {
+    .img-container {
+        display: none;
+    }
+}
