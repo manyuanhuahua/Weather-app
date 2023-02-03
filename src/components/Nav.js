@@ -6,7 +6,7 @@ const Nav = () => {
     const history = useHistory()
     return (
         <ul className="navbar">
-            <li className="nav-items" onClick={() => history.push('/')}>
+            <li className="nav-items" onClick={() => history.push('/home')}>
                 My Weather App</li>
             <li className="nav-items">
                 <Search />

@@ -5,9 +5,9 @@
     align-items: center;
     background: url('../../assest/listBg.jpg');
     background-repeat: no-repeat;
-    height: 100vh;
     margin-top: 0;
     background-size: cover;
+
 }
 
 .weather-list-container .weather-section {
@@ -25,4 +25,11 @@
     padding: 0;
 
 
+}
+
+@media only screen and (max-width:1320px) {
+
+    .weather-list-container .weather-section ul {
+        flex-wrap: wrap;
+    }
 }

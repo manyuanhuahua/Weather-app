@@ -9,7 +9,7 @@
     background: url('../../assest/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
     padding: 20px 70px;
     color: #fff;
@@ -27,7 +27,7 @@
 
     display: flex;
     justify-content: space-evenly;
-    height: 60vh;
+    /* height: 60vh; */
     flex-wrap: wrap;
     background: rgba(245, 237, 237, 0.4);
     padding: 30px;
@@ -136,10 +136,17 @@
 @media only screen and (max-width:730px) {
     .cur-container {
         padding: 20px;
+        overflow: auto;
+    }
+
+    .current-info {
+        padding: 20px;
+        height: 900px;
+
     }
 
     .time {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #am-pm {
@@ -150,6 +157,21 @@
         font-size: 20px;
     }
 
+    .location {
+        font-size: 20px;
+    }
+
+    .current-info .others{
+        padding: 10px;
+    }
+
+    .others > div{
+        font-size: 10px;
+    }
+
+    .weather-item:nth-of-type(1) > div{
+        font-size: 20px;
+    }
     .place-contianer {
         text-align: end;
         margin-top: 15px;
@@ -157,6 +179,11 @@
 
     .time-zone {
         font-size: 20px;
+        display: none;
+    }
+
+    .place-top{
+        display: none;
     }
 
     .img-container {
@@ -166,8 +193,78 @@
 
 
 
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:1055px) {
     .img-container {
         display: none;
     }
+
+    .current-info{
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-height:600px) {
+    .cur-container {
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .current-info {
+        padding: 20px;
+        height: 900px;
+
+    }
+
+    .time {
+        font-size: 30px;
+    }
+
+    #am-pm {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .location {
+        font-size: 20px;
+    }
+
+    .current-info .others{
+        padding: 10px;
+    }
+
+    .others > div{
+        font-size: 10px;
+    }
+
+    .weather-item:nth-of-type(1) > div{
+        font-size: 20px;
+    }
+    .place-contianer {
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .time-zone {
+        font-size: 20px;
+        display: none;
+    }
+
+    .place-top{
+        display: none;
+    }
+
+    .img-container h2{
+        font-size: 20px;
+    }
+
+    .img-container h4{
+        font-size: 15px;
+    }
+
+
 }

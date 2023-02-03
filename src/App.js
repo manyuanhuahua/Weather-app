@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Switch>
-        <Route path='/' exact={true}>
+        <Route path='/home' exact={true}>
           <CurrentCard />
         </Route>
         <Route path='/weatherlist'>
