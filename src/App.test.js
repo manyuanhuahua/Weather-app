@@ -1,18 +1,14 @@
 import React from "react";
 import moment from "moment";
-import { useEffect, useState } from "react";
-import { mount, shallow } from "enzyme";
-import { render, waitFor, cleanup, fireEvent } from '@testing-library/react';
+
+import { shallow } from "enzyme";
+import { render, fireEvent } from '@testing-library/react';
 import CurrentCard from "./components/CurrentCard";
 import Enzyme from 'enzyme';
 import Adapter from '@cfaester/enzyme-adapter-react-18';
 
 import Search from './components/Search';
-import { useHistory, useLocation } from 'react-router-dom';
-import WeatherList from "./components/WeatherList";
-import SummaryCard from "./components/SummaryCard";
-import LineChart from "./components/LineChart";
-import WeatherDetail from "./components/WeatherDetail";
+
 
 
 
@@ -34,11 +30,8 @@ global.navigator.geolocation = {
   })
 };
 
-global.ResizeObserver = jest.fn(() => ({
-  observe: jest.fn(),
-  disconnect: jest.fn(),
-}));
 
+// homepage testing
 describe("CurrentCard component", () => {
   let wrapper;
 
@@ -65,9 +58,6 @@ describe('Search component', () => {
   let wrapper;
 
   let searchLoad, searchRes;
-  let history;
-
-
 
   beforeEach(() => {
 

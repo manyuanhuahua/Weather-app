@@ -10,6 +10,7 @@ const LineChart = ({weekly}) => {
     const humidity = weekly.map((day)=>day.main.humidity)
     const timeline = weekly.map((day)=>day.dt_txt)
 
+    // set 5 days weather linechart
     const series =[{
             name: 'Temputure(&deg;C)',
             data: temp

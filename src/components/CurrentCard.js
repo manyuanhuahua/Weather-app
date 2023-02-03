@@ -27,7 +27,7 @@ const CurrentCard = () => {
 
 
 
-
+// update clock time every minute
   useEffect(() => {
     const interval = setInterval(() => {
       const cur = new Date();
@@ -37,6 +37,7 @@ const CurrentCard = () => {
     return () => clearInterval(interval);
   }, []);
 
+// get current location and fetch local weather info
   const getCurLocation = () => {
     navigator.geolocation.getCurrentPosition((success) => {
       let { latitude, longitude } = success.coords;
@@ -53,6 +54,7 @@ const CurrentCard = () => {
     });
   };
 
+  // get daily astronomy image from NASA
   const image = () => {
     fetch("https://go-apod.herokuapp.com/apod")
       .then((res) => res.json())
@@ -66,7 +68,7 @@ const CurrentCard = () => {
   image()
 
 
-
+// display local weather info
   const showWeather = (data) => {
     let { humidity, pressure, feels_like } = data.main;
     let { description, icon } = data.weather[0];

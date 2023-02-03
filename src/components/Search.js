@@ -16,7 +16,7 @@ const Search = () => {
   const [noData,setNoData] = useState('')
 
 
-
+// convert user's input of city and state into geo coordinates and fetch weather info based on coordinates
   const converGeo = (city, state) => {
     fetch(
       `http://api.openweathermap.org/geo/1.0/direct?q=${city},${state},US&limit=1&appid=${KEY}`
@@ -50,6 +50,8 @@ const Search = () => {
     converGeo(city, state)
   }
 
+
+// update history state based on input and redirect user to weatherlist page
   useEffect(() => {
     if (searchLoad && Object.keys(searchRes).length) {
       history.push({
@@ -59,6 +61,7 @@ const Search = () => {
       window.location.reload();
     }
   }, [searchLoad, history, searchRes]);
+  
   return (
     <div className="search-container">
       <form onSubmit={handlesubmit}>
