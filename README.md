@@ -1,4 +1,4 @@
-# Adaptavist-project: My Weather App
+# My Weather App
 ## Introduction
 My Weather App is a morden weather search web application that allows users to get current weather status based on user's location and search for desired location's weather info. This documentation provides instructions for deploying the My Weather App to a production environment. The deployment process has been automated using Github Actions and Docker container, to ensure that it is repeatable, reliable and easy to execute.
 
